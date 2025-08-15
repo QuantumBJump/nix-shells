@@ -8,6 +8,10 @@
         # Simple Rust/Cargo template
       '';
     };
-    templates.default = self.templates.rust;
+
+    templates.default = {
+      path = ./flakes/default;
+      description = "A basic flake";
+    };
   };
 }
